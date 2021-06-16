@@ -23,7 +23,7 @@ public class Main {
      */
     public static void main(String[] args) {
         Dataset dataset = new Dataset("test_data/ionosphere.arff");
-        dataset.setOutputAttribute("target");
+        dataset.setOutputAttribute("class");
         KFoldCrossValidation crossValidator = new KFoldCrossValidation(dataset, 10);
         /*TrainTestSplitter ds = new TrainTestSplitter(dataset, 0.2);
         //ds.getTrainData().printDataset();
